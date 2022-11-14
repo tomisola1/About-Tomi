@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+}
+
+.card {
+    background: #fff;
+    color: #333;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(4, 60, 119, 0.211);
+}
+
+.card-head{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: solid 1px #ccc;
+}
+
+.card-head .sub-title{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #6B46C1;
+}
+
+.card-head .title{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.title sup{
+    font-size: 1.5rem;
+}
+
+.card-head .description{
+    font-size: 0.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-body .list .item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.card-body .list .item .fa-solid{
+    font-size: 0.5rem;
+    width: 20px;
+    height: 20px;
+    background: rgb(222, 247, 236);
+    color: #6B46C1;
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 33px;
+}
+
+.card-body .list .item p {
+    font-size: 0.6rem;
+    margin-left: 0.5rem;
+}
+  
+.card-body .list small {
+    font-size: 0.6rem;
+    margin-top: rem;
+}
+  
+.card-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+  
+.card-footer .btn {
+    font-size: 0.6rem;
+    text-decoration: none;
+    background: #6B46C1;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 3px;
+    display: block;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+  
+  
+@media (max-width: 991px) {
+    .card {
+      width: 40%
+    }
+}
+  
+@media (max-width: 768px) {
+    .card {
+      width: 50%
+    }
+}
+  
+@media (max-width: 441px) {
+    .card {
+      width: 70%
+    }
+}
