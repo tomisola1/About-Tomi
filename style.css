@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+body {
+    font-family: 'Cookie', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.likes{
+    font-size: 3rem;
+    margin: 35px;
+    background-color: #333;
+    color: #ffffff;
+    width: 20rem;
+}
+
+#likes-id{
+    background-color: cornflowerblue;
+}
+
+.dislikes{
+    font-size: 3rem;
+    margin: 35px;
+    color: #ffffff;
+    background-color: #333;
+    width: 20rem;
+    padding-left: 60px;
+}
+
+#dislikes-id{
+    background-color: #4614dc;
+}
+
+ul .likes-list{
+    list-style-type: square;
+}
+
+#favorite{
+    color: #e211aa;
+}
+
+ol .dislikes-list{
+    list-style-type: lower-roman;
+}
+
+#most-dislike{
+    color: #e21111;
+    text-decoration: underline;
+}
